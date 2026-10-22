@@ -1,8 +1,8 @@
 {
   "id": "./?app=mlshs-notate-y9",
-  "name": "Notate — Year 9 Music",
-  "short_name": "Notate",
-  "description": "Notate Year 9 scales and notes on the stave, then check them.",
+  "name": "Year 9 Music Theory Blitz",
+  "short_name": "Theory Blitz",
+  "description": "Interactive Year 9 music theory: notate on the stave, answer, and track your score per section.",
   "start_url": "./?app=mlshs-notate-y9",
   "scope": "./",
   "display": "standalone",
