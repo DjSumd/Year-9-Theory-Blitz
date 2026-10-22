@@ -12,10 +12,10 @@ const UNITS=[
    <li><b>Octave numbers (SPN):</b> middle C = C4. Each higher C is C5, C6…; each lower is C3, C2…</li></ol>
    <b>Writing a note:</b> find the exact line or space for that letter, then click it.`,
   qs:[
-  {t:'notate',prompt:'Notate: A, C, E, G',sub:'Treble clef. Tonic given.',clef:'treble',given:1,notes:[['A',4,''],['C',5,''],['E',5,''],['G',5,'']]},
-  {t:'notate',prompt:'Notate: D, F, A, C',sub:'Bass clef. Tonic given.',clef:'bass',given:1,notes:[['D',3,''],['F',3,''],['A',3,''],['C',4,'']]},
-  {t:'notate',prompt:'Notate: G, B, D, F',sub:'Treble clef (the lines). Tonic given.',clef:'treble',given:1,notes:[['G',4,''],['B',4,''],['D',5,''],['F',5,'']]},
-  {t:'notate',prompt:'Notate: F, A, C, E',sub:'Treble spaces. Tonic given.',clef:'treble',given:1,notes:[['F',4,''],['A',4,''],['C',5,''],['E',5,'']]},
+  {t:'notate',anyOctave:true,prompt:'Notate: A, C, E, G',sub:'Treble clef. Any octave of each note counts. Tonic given.',clef:'treble',given:1,notes:[['A',4,''],['C',5,''],['E',5,''],['G',5,'']]},
+  {t:'notate',anyOctave:true,prompt:'Notate: D, F, A, C',sub:'Bass clef. Any octave of each note counts. Tonic given.',clef:'bass',given:1,notes:[['D',3,''],['F',3,''],['A',3,''],['C',4,'']]},
+  {t:'notate',anyOctave:true,prompt:'Notate: G, B, D, F',sub:'Treble clef (the lines). Any octave counts. Tonic given.',clef:'treble',given:1,notes:[['G',4,''],['B',4,''],['D',5,''],['F',5,'']]},
+  {t:'notate',anyOctave:true,prompt:'Notate: F, A, C, E',sub:'Treble spaces. Any octave counts. Tonic given.',clef:'treble',given:1,notes:[['F',4,''],['A',4,''],['C',5,''],['E',5,'']]},
   {t:'choice',prompt:'Name this note.',show:{clef:'treble',cols:[['E4']]},options:['C','D','E','F','G'],answer:'E'},
   {t:'choice',prompt:'Name this note.',show:{clef:'treble',cols:[['C5']]},options:['A','B','C','D','E'],answer:'C',why:'Third space of the treble staff.'},
   {t:'choice',prompt:'Name this note.',show:{clef:'bass',cols:[['F3']]},options:['D','E','F','G','A'],answer:'F',why:'Fourth line of the bass staff, between the F-clef dots.'},
@@ -65,7 +65,7 @@ const UNITS=[
   {t:'notate',prompt:'C natural minor, ascending',sub:'3 flats. Tonic given.',clef:'treble',given:1,notes:[['C',4,''],['D',4,''],['E',4,'f'],['F',4,''],['G',4,''],['A',4,'f'],['B',4,'f'],['C',5,'']]},
   {t:'notate',prompt:'A harmonic minor, ascending',sub:'Raised 7th. Tonic given.',clef:'treble',given:1,notes:[['A',4,''],['B',4,''],['C',5,''],['D',5,''],['E',5,''],['F',5,''],['G',5,'s'],['A',5,'']]},
   {t:'notate',prompt:'E harmonic minor, ascending',sub:'Raised 7th. Tonic given.',clef:'treble',given:1,notes:[['E',4,''],['F',4,'s'],['G',4,''],['A',4,''],['B',4,''],['C',5,''],['D',5,'s'],['E',5,'']]},
-  {t:'notate',prompt:'A blues scale, ascending',sub:'A C D E♭ E G A. Tonic given.',clef:'treble',given:1,notes:[['A',4,''],['C',5,''],['D',5,''],['E',5,'f'],['E',5,'n'],['G',5,''],['A',5,'']]},
+  {t:'notate',prompt:'A blues scale, ascending',sub:'The blues scale (1 ♭3 4 ♯4 5 ♭7). Tonic given.',clef:'treble',given:1,notes:[['A',4,''],['C',5,''],['D',5,''],['E',5,'f'],['E',5,'n'],['G',5,''],['A',5,'']]},
   {t:'choice',prompt:'The major scale pattern (T = tone, S = semitone) is…',options:['T T S T T T S','T S T T S T T','T T T S T T S'],answer:'T T S T T T S'},
   {t:'choice',prompt:'The natural minor scale pattern is…',options:['T S T T S T T','T T S T T T S','S T T S T T T'],answer:'T S T T S T T'},
   {t:'choice',prompt:'In the major scale, the semitones fall between degrees…',options:['2–3 and 5–6','3–4 and 7–8','1–2 and 4–5'],answer:'3–4 and 7–8'},
