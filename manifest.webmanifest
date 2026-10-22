@@ -1,0 +1,17 @@
+{
+  "id": "./?app=mlshs-notate-y9",
+  "name": "Notate — Year 9 Music",
+  "short_name": "Notate",
+  "description": "Notate Year 9 scales and notes on the stave, then check them.",
+  "start_url": "./?app=mlshs-notate-y9",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#141414",
+  "theme_color": "#141414",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
